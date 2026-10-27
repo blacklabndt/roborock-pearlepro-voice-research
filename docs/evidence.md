@@ -13,6 +13,8 @@ US Cantonese package response observations:
 
 The EU catalog also listed Cantonese version 2 and served identical bytes. The CN catalog listed version 4 and different bytes; it is not the studied version-2 sample. Retrieval observations are snapshots; URLs may later serve different content.
 
+Follow-up comparison established that the Cantonese catalog hash is exactly the full-file MD5 of the Mandarin PearlEPro sample. Both the English and Mandarin files match their own catalog hashes. See [checksum study](boundary-analysis.md). This narrows the discrepancy to a likely metadata mix-up without establishing the publisher's cause or the Cantonese file's signature validity.
+
 ## Model mapping
 
 An authenticated catalog query returned numeric product ID 179 for `roborock.vacuum.a170`, named Roborock Qrevo C, with package name `com.roborock.tanos`. No account response or identifying device information is published.

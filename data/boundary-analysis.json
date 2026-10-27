@@ -1,0 +1,133 @@
+{
+  "scope": {
+    "removed_header_bytes": [
+      0,
+      16,
+      32
+    ],
+    "removed_trailer_bytes_inclusive": [
+      0,
+      8192
+    ],
+    "block_alignment": "relative to file offset zero"
+  },
+  "samples": [
+    {
+      "sample": "q7max-cantonese.pkg",
+      "sha256": "a77fe617694171c098f98e05e1227148e0bb412d705a6e6a75956f8af964e3f8",
+      "body_block_bytes": 16,
+      "body_block_count": 91649,
+      "repeated_block_values": 0,
+      "duplicate_block_occurrences": 0,
+      "catalog_md5": null,
+      "checksum_span_matches": null
+    },
+    {
+      "sample": "qrevo-a75-cantonese.pkg",
+      "sha256": "b821f3533298422521a6ab2e26981675378264fbb18e19666cf13fa22752aad3",
+      "body_block_bytes": 16,
+      "body_block_count": 106497,
+      "repeated_block_values": 0,
+      "duplicate_block_occurrences": 0,
+      "catalog_md5": null,
+      "checksum_span_matches": null
+    },
+    {
+      "sample": "s5v-cantonese-v2.pkg",
+      "sha256": "36d728688f08ea7d4d99116c0c00606546b7613b3c17c3cd4ecd5d5a76dbf87c",
+      "body_block_bytes": 16,
+      "body_block_count": 165121,
+      "repeated_block_values": 0,
+      "duplicate_block_occurrences": 0,
+      "catalog_md5": "681b5d6fd06612c6da56cb7c0d508596",
+      "checksum_span_matches": []
+    },
+    {
+      "sample": "s5v-english-format-sample.pkg",
+      "sha256": "fcf807f176574c7bdb7dd18213af4c47f2d8fdb7801d89d31997ea8581a7b3de",
+      "body_block_bytes": 16,
+      "body_block_count": 186881,
+      "repeated_block_values": 0,
+      "duplicate_block_occurrences": 0,
+      "catalog_md5": "b773bb3543d295f94f848ce3a1fa0651",
+      "checksum_span_matches": [
+        {
+          "header_removed": 0,
+          "trailer_removed": 0
+        }
+      ]
+    },
+    {
+      "sample": "s5v-mandarin-format-sample.pkg",
+      "sha256": "18a43ae4f320834d7da39e6ceff4dd5cd2be44dfa22ba984eac6af1da386f3d8",
+      "body_block_bytes": 16,
+      "body_block_count": 179457,
+      "repeated_block_values": 0,
+      "duplicate_block_occurrences": 0,
+      "catalog_md5": "681b5d6fd06612c6da56cb7c0d508596",
+      "checksum_span_matches": [
+        {
+          "header_removed": 0,
+          "trailer_removed": 0
+        }
+      ]
+    }
+  ],
+  "pair_comparisons": [
+    {
+      "left": "q7max-cantonese.pkg",
+      "right": "qrevo-a75-cantonese.pkg",
+      "shared_aligned_body_blocks": 0
+    },
+    {
+      "left": "q7max-cantonese.pkg",
+      "right": "s5v-cantonese-v2.pkg",
+      "shared_aligned_body_blocks": 0
+    },
+    {
+      "left": "q7max-cantonese.pkg",
+      "right": "s5v-english-format-sample.pkg",
+      "shared_aligned_body_blocks": 0
+    },
+    {
+      "left": "q7max-cantonese.pkg",
+      "right": "s5v-mandarin-format-sample.pkg",
+      "shared_aligned_body_blocks": 0
+    },
+    {
+      "left": "qrevo-a75-cantonese.pkg",
+      "right": "s5v-cantonese-v2.pkg",
+      "shared_aligned_body_blocks": 0
+    },
+    {
+      "left": "qrevo-a75-cantonese.pkg",
+      "right": "s5v-english-format-sample.pkg",
+      "shared_aligned_body_blocks": 0
+    },
+    {
+      "left": "qrevo-a75-cantonese.pkg",
+      "right": "s5v-mandarin-format-sample.pkg",
+      "shared_aligned_body_blocks": 0
+    },
+    {
+      "left": "s5v-cantonese-v2.pkg",
+      "right": "s5v-english-format-sample.pkg",
+      "shared_aligned_body_blocks": 0
+    },
+    {
+      "left": "s5v-cantonese-v2.pkg",
+      "right": "s5v-mandarin-format-sample.pkg",
+      "shared_aligned_body_blocks": 0
+    },
+    {
+      "left": "s5v-english-format-sample.pkg",
+      "right": "s5v-mandarin-format-sample.pkg",
+      "shared_aligned_body_blocks": 0
+    }
+  ],
+  "limitations": [
+    "Checksums cover contiguous raw-file spans, not unknown plaintext.",
+    "No repeated blocks does not identify a cipher, mode, IV or key.",
+    "No decryption or signature verification was attempted."
+  ]
+}

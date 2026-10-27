@@ -15,7 +15,9 @@ Offline format research for the official Cantonese voice package associated with
 
 ## Integrity caveat
 
-The downloaded Cantonese file's MD5 is `c5471666cee5b0558f187d4b5a45e265`, while the catalog lists `681b5d6fd06612c6da56cb7c0d508596`. A US re-download with a cache-busting query produced identical bytes and matched the CDN ETag. The EU copy also returned identical bytes with the same catalog discrepancy. Excluding the candidate trailer did not reproduce the catalog MD5.
+The downloaded Cantonese file's MD5 is `c5471666cee5b0558f187d4b5a45e265`, while the catalog lists `681b5d6fd06612c6da56cb7c0d508596`. A US re-download with a cache-busting query produced identical bytes and matched the CDN ETag. The EU copy also returned identical bytes with the same catalog discrepancy.
+
+**Follow-up finding:** the MD5 listed for Cantonese exactly matches the complete **Mandarin** package (`prc.pkg`). Both Mandarin and English match their own catalog MD5 values over the complete files. This supports a catalog metadata mix-up; it does not prove why the wrong value was published or verify the Cantonese signature. See [boundary and checksum analysis](docs/boundary-analysis.md).
 
 SHA-256 of the studied file:
 
@@ -31,6 +33,13 @@ Requires Python 3.10+ and only the standard library. Obtain your own samples fro
 
 ```console
 python inspect_package.py /path/to/yueyu.pkg --output inspection.json
+```
+
+For the bounded checksum-span and repeated-block study, use known samples from the manifest:
+
+```console
+python analyze_boundaries.py /path/to/yueyu.pkg /path/to/en.pkg /path/to/prc.pkg
+python -m unittest discover -v
 ```
 
 The script reads a local file and reports hashes, selected file signatures, entropy and candidate trailer relationships. It does not contact a vacuum or cloud service, decrypt, extract archives, or change its input. A matching pattern is not cryptographic verification.

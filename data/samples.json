@@ -168,7 +168,8 @@
       },
       "decrypted": false,
       "authenticity_verified": false
-    }
+    },
+    "catalog_md5": "b773bb3543d295f94f848ce3a1fa0651"
   },
   {
     "sample": "s5v-mandarin-format-sample.pkg",
@@ -210,6 +211,7 @@
       },
       "decrypted": false,
       "authenticity_verified": false
-    }
+    },
+    "catalog_md5": "681b5d6fd06612c6da56cb7c0d508596"
   }
 ]
