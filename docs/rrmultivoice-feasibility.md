@@ -52,6 +52,8 @@ These are static observations, not failures reproduced on a robot:
 
 ## Practical next milestones
 
+Follow-up: a separate [voice-message playback flow](voice-message-interface.md) was identified in the shared official plugin. Its S5V capability gate remains unverified. Checking this normal app feature is worthwhile before investing in a filesystem-based service.
+
 1. **Compatibility evidence:** obtain documented information about the S5V execution environment and supported administrative or development interfaces. If an already authorized administrative interface becomes available, limit initial checks to OS/CPU, process identity, sound paths, mount properties and file metadata. No bypass or rooting workflow is proposed here.
 2. **Desktop proof of concept:** independently implement and test the file-selection behavior against temporary directories and a simulated audio player. Require an observe-only mode, validation of every replacement, a temporary hard link followed by atomic rename, preservation of originals and clean rollback. This can be developed without touching a vacuum, but cannot prove S5V compatibility.
 3. **Audio contract:** obtain a legitimately available plaintext example or documented playback specification to establish codec, sample rate, channels and event-to-filename mapping. Use original recordings for test assets.
