@@ -50,6 +50,16 @@ Muting normal announcements is not an established workaround: it could also mute
 
 There is currently no verified way in this investigation to replace the S5V's cleaning/error announcements. Demonstrating a normal voice-message feature would be useful, but would not resolve the persistent replacement requirement.
 
+### Independent review and follow-up
+
+Claude Code reviewed these research summaries on 2026-10-26 without device access or independent artifact inspection. Its useful additional distinction: a successful manual recording through the app would not establish a supported programmatic playback interface for automation. Neither automatic event playback nor persistent announcement replacement has been demonstrated.
+
+Further inspection of the existing disassembly found assignments from a response's `new_feature_info` field to `robotNewFeatures`. This narrows the field provenance; it does not establish the S5V's current value. The saved Android log had no numeric value for either field. The cloud `newFeatureSet` field must not be substituted based on its similar name.
+
+The review also emphasized that rrmultivoice rotates a filename after detecting it open. Under normal open-file semantics, a player retaining that descriptor reads the previous inode. To replace the first occurrence of an event, the desired recording must already be in place before the player opens it. Actual S5V playback behavior remains unknown.
+
+The review is advisory. Absence of a demonstrated interface is not proof that no interface exists, and the current evidence does not justify claiming S5V modification is impossible.
+
 1. Inspect the normal app controls for the selected S5V for a send-recording feature. Do not force-enable hidden controls.
 2. If accessible through an existing authenticated read-only status response, inspect only the relevant capability value and establish its mapping to `robotNewFeatures`. Do not assume a similarly named cloud field has identical semantics.
 3. If the normal app exposes the feature, use a short original recording through that supported UI to verify actual speaker playback. Record model, firmware and outcome without publishing account or device identifiers.
