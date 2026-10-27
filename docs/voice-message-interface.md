@@ -71,6 +71,8 @@ The connected Android device was not available to ADB during this follow-up, so 
 
 ## Public-source compatibility check
 
+Live follow-up on 2026-10-26: Mindsolo's [voice-pack builder](https://vacuum.mindsolo.net/en/create/voicepack) listed 540 selectable models. Filtering by `a170` returned 0 of 540, and replacing the search with `S5V` also returned no models. The general model catalog likewise returned no result for `a170`. Its [creation guide](https://vacuum.mindsolo.net/en/info/create-voicepack) documents MP3/WAV/OGG uploads for supported models, but that general upload capability is not evidence of S5V support. No recording was uploaded and no alternate model was selected to build an incompatible package.
+
 - The [rrmultivoice issue listing](https://github.com/erkexzcx/rrmultivoice/issues?q=is%3Aissue) returned no issues in an all-states API query during this check. This supplies no additional S5V compatibility evidence.
 - The [Valetudo supported-robots list](https://valetudo.cloud/pages/general/supported-robots/) does not list Qrevo S5V/a170 and explicitly describes its list as exhaustive.
 - [Home Assistant's Roborock integration](https://www.home-assistant.io/integrations/roborock) documents control and monitoring of Qrevo-series devices. Its documented functionality does not establish arbitrary-audio upload or an administrative filesystem interface. Integration support is not rrmultivoice installation support.
