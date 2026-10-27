@@ -24,3 +24,11 @@ The [project README](https://github.com/Python-roborock/local_roborock_server) d
 ## Current conclusion
 
 No verified portal for the requested file/firmware access has been found. Repeating ordinary control queries or finding another control dashboard does not resolve this gap. Useful new evidence would be an S5V-specific documented service/export procedure or an official downloadable image; no such artifact was obtained in this check. No credentials, private screenshots or device addresses are published.
+
+## Expanded public-source search
+
+A further search on the same date covered the exact model identifier, S5V, PearlEPro, service software, SSH references and Qrevo web interfaces. It did not identify an S5V-specific device-hosted administration portal. Search absence is not proof of absence, and no hidden endpoints were probed.
+
+The [Local Roborock Server installation guide](https://github.com/Python-roborock/local_roborock_server/blob/main/docs/installation.md) explicitly places `/admin` on the separately deployed server and describes its administrator credentials separately from cloud and protocol credentials. Thus, search hits referring to that admin page do not establish a portal on the robot. [LocalRock](https://github.com/DonSidro/LocalRock) likewise describes itself as a client of that separately hosted backend. Neither source establishes S5V filesystem access or recording replacement.
+
+The subsequently verified app firmware screen and app logs also report no offered update or firmware package link; see the manual-navigation follow-up in [firmware acquisition](firmware-acquisition.md).
