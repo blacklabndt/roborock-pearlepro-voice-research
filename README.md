@@ -59,6 +59,8 @@ State the model, voice ID/version, source URL, sample SHA-256, tool/version and 
 
 ## Evidence and limitations
 
+For an alternative to package decoding, see the [rrmultivoice feasibility assessment](docs/rrmultivoice-feasibility.md). It identifies upstream assumptions, source-level reliability concerns and the evidence still needed for S5V support. No on-device installation route has been established.
+
 See [provenance and app inspection](docs/evidence.md). Binary packages, proprietary APKs/plugins, disassemblies, account helpers, credentials and private device logs are not redistributed here. Public CDN links are supplied for independent reproduction. The repository contains original summaries and limited format measurements, not manufacturer source code.
 
 Research notes were prepared with AI assistance and checked against the recorded local measurements. Cryptographic interpretations remain hypotheses until independently validated. This project is not affiliated with Roborock.
