@@ -32,6 +32,24 @@ Even successful voice-message playback would not demonstrate automatic replaceme
 
 ## Next verification
 
+### Can this replace cleaning and error announcements?
+
+A follow-up bounded search of the shared plugin's explicit voice/audio/sound identifiers and the traced playback functions did not identify a registration API mapping user recordings to cleaning or error events. This is not a complete firmware audit and does not prove such an interface cannot exist.
+
+The observed message playback path accepts recording data for an immediate playback request. No event-binding or persistent prompt replacement was identified in that path. Voice-service switches and sound-volume controls are not evidence of per-event audio substitution.
+
+Three distinct approaches must therefore remain separate:
+
+| Approach | Can replace the original event announcement? | S5V status |
+| --- | --- | --- |
+| Compatible system voice pack | In principle, if the device accepts a pack containing the relevant prompts | No custom-pack acceptance or construction demonstrated |
+| On-device sound-file replacement, as used by rrmultivoice | In principle, where the firmware opens compatible writable files for those events | Administrative access, paths and playback behavior unverified |
+| External event automation plus voice-message playback | Can potentially add a message; does not itself replace the original | S5V playback support unverified; event coverage, latency and volume interaction untested |
+
+Muting normal announcements is not an established workaround: it could also mute message playback, suppress useful fault reports or produce timing gaps while volume is changed. No per-channel mute separation has been established. A replacement error message should preserve the original fault meaning and recovery advice.
+
+There is currently no verified way in this investigation to replace the S5V's cleaning/error announcements. Demonstrating a normal voice-message feature would be useful, but would not resolve the persistent replacement requirement.
+
 1. Inspect the normal app controls for the selected S5V for a send-recording feature. Do not force-enable hidden controls.
 2. If accessible through an existing authenticated read-only status response, inspect only the relevant capability value and establish its mapping to `robotNewFeatures`. Do not assume a similarly named cloud field has identical semantics.
 3. If the normal app exposes the feature, use a short original recording through that supported UI to verify actual speaker playback. Record model, firmware and outcome without publishing account or device identifiers.
