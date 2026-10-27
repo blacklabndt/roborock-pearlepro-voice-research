@@ -4,6 +4,8 @@ Investigation date: 2026-10-26. Status: static evidence only; no playback reques
 
 ## Finding
 
+**Live UI follow-up, 2026-10-26:** inspected the selected S5V's normal Android app screens over owner-authorized wireless ADB. Robot Voice showed volume, official language choices and a single Cantonese entry under Custom Tones, marked Current. No upload, recording or per-event assignment control was visible. More Options showed DND, charging, button-light, child-lock and offline-map settings, with no audio controls. Remote Control showed directional controls, Spot Clean and Back to Dock, with no microphone/send-recording control. The main device screen likewise exposed no recording control. This is a negative result for these inspected screens and configuration, not proof that every firmware or region lacks the feature. No playback, movement, installation or settings-change control was activated. Private screenshots are not published.
+
 The previously acquired official model plugin contains a phone-recording-to-robot playback flow. This is distinct from downloading a system voice package and from rrmultivoice's filesystem replacement approach.
 
 The installed python-roborock 7.13.0 command enumeration includes `PLAY_AUDIO = "play_audio"`. A search of the installed Python package found the declaration but no dedicated implementation establishing its payload or supported models. The [upstream command enumeration](https://github.com/Python-roborock/python-roborock/blob/main/roborock/roborock_typing.py) is a reference, not a device capability guarantee.
