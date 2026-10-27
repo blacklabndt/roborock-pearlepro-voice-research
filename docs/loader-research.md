@@ -23,3 +23,16 @@ Our [local sample comparison](cross-model-comparison.md) establishes similar out
 ## Result and next evidence
 
 The practical finding is that the old S5 writable-WAV model is an inadequate default for this investigation. A complete solution needs both the S5V's package-acceptance rules and its playback/storage layout. No native Q7 Max, Qrevo or S5V loader was acquired or decompiled in this review. A legitimately obtained loader/firmware artifact with model and version provenance would allow offline examination of those questions. Public controller code alone cannot resolve them.
+
+## Firmware acquisition search
+
+On 2026-10-26, the public [Mindsolo Q7 Max listing](https://vacuum.mindsolo.net/en/models/roborock.vacuum.a38) and its [release page](https://vacuum.mindsolo.net/en/firmwares/3394/versions/25298) identified `4.3.5_0918`, 26.3 MiB, dated 2023-10-01 and labeled Official. The rendered release page exposed Install and a version-link sharing action, but no direct file-download action in the inspected controls. Install was not invoked. The catalog label is not independent verification of a downloaded binary.
+
+The public robotinfo repository contains firmware metadata tables for both [Q7 Max a38](https://github.com/dgiese/robotinfo/blob/main/firmwares/roborock.vacuum.a38.html) and [original Qrevo a75](https://github.com/dgiese/robotinfo/blob/main/firmwares/roborock.vacuum.a75.html). Examples suitable for identifying a future supplied artifact are:
+
+| Model | Version | Catalog MD5 | Listed filename |
+| --- | --- | --- | --- |
+| Q7 Max a38 | 4.3.5_0866 | 4c42468471ee44b9b46cd542f029e401 | 4c42468471ee44b9b46cd542f029e401_upd_roborock.vacuum.a38.bin |
+| Qrevo a75 | 4.3.5_1046 | 31f9c6109322b8b1368325c771d693d3 | 31f9c6109322b8b1368325c771d693d3_upd_roborock.vacuum.a75.bin |
+
+These tables provide filenames and checksums, not downloadable binary links. Exact-checksum public searches did not yield a usable image. No firmware binary was downloaded in this search, and no native-loader inspection can be claimed. A catalog MD5 can correlate an artifact with a listed release, but does not independently authenticate its manufacturer signature.
