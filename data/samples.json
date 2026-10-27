@@ -1,0 +1,215 @@
+[
+  {
+    "sample": "q7max-cantonese.pkg",
+    "model_family": "Q7 Max",
+    "source_url": "https://awsde0.fds.api.xiaomi.com/app/tanosslite/voice-pkg/package/yueyu.pkg",
+    "voice_id": 1001,
+    "version": 3,
+    "catalog_md5": null,
+    "inspection": {
+      "bytes": 1467412,
+      "sha256": "a77fe617694171c098f98e05e1227148e0bb412d705a6e6a75956f8af964e3f8",
+      "md5": "21095b97d68151cce7184fab297ae3d0",
+      "entropy_bits_per_byte": 7.999842,
+      "signature_first_offsets": {
+        "zip": -1,
+        "gzip": -1,
+        "riff": -1,
+        "ogg": -1,
+        "flac": -1,
+        "tar_ustar": -1,
+        "xz": -1,
+        "zstd": -1,
+        "squashfs_le": -1
+      },
+      "candidate_trailer": {
+        "start": 1466384,
+        "length": 1028,
+        "prefix_hex": "01060100",
+        "u32le_at_956": 1466368,
+        "u32le_at_960": 1466384,
+        "u32le_at_976": 1433,
+        "checks": {
+          "marker_matches": true,
+          "field956_equals_body_minus16": true,
+          "field960_equals_body": true,
+          "field956_is_4096_aligned": true,
+          "field976_equals_ceil_body_div1024": true
+        },
+        "matches_studied_pattern": true
+      },
+      "decrypted": false,
+      "authenticity_verified": false
+    }
+  },
+  {
+    "sample": "qrevo-a75-cantonese.pkg",
+    "model_family": "Original Qrevo a75",
+    "source_url": "https://awsde0.fds.api.xiaomi.com/app/pearl/voice-pkg/package/yueyu.pkg",
+    "voice_id": 1001,
+    "version": 4,
+    "catalog_md5": null,
+    "inspection": {
+      "bytes": 1704980,
+      "sha256": "b821f3533298422521a6ab2e26981675378264fbb18e19666cf13fa22752aad3",
+      "md5": "35557162dd1bdedcf3b212e40c2a495f",
+      "entropy_bits_per_byte": 7.999854,
+      "signature_first_offsets": {
+        "zip": -1,
+        "gzip": -1,
+        "riff": -1,
+        "ogg": -1,
+        "flac": -1,
+        "tar_ustar": -1,
+        "xz": -1,
+        "zstd": -1,
+        "squashfs_le": -1
+      },
+      "candidate_trailer": {
+        "start": 1703952,
+        "length": 1028,
+        "prefix_hex": "01060100",
+        "u32le_at_956": 1703936,
+        "u32le_at_960": 1703952,
+        "u32le_at_976": 1665,
+        "checks": {
+          "marker_matches": true,
+          "field956_equals_body_minus16": true,
+          "field960_equals_body": true,
+          "field956_is_4096_aligned": true,
+          "field976_equals_ceil_body_div1024": true
+        },
+        "matches_studied_pattern": true
+      },
+      "decrypted": false,
+      "authenticity_verified": false
+    }
+  },
+  {
+    "sample": "s5v-cantonese-v2.pkg",
+    "model_family": "PearlEPro a170",
+    "source_url": "https://us-app.roborock.com/app/pearlepro/voice-pkg/package/yueyu.pkg",
+    "voice_id": 1001,
+    "version": 2,
+    "catalog_md5": "681b5d6fd06612c6da56cb7c0d508596",
+    "inspection": {
+      "bytes": 2642964,
+      "sha256": "36d728688f08ea7d4d99116c0c00606546b7613b3c17c3cd4ecd5d5a76dbf87c",
+      "md5": "c5471666cee5b0558f187d4b5a45e265",
+      "entropy_bits_per_byte": 7.999927,
+      "signature_first_offsets": {
+        "zip": -1,
+        "gzip": -1,
+        "riff": -1,
+        "ogg": -1,
+        "flac": -1,
+        "tar_ustar": -1,
+        "xz": -1,
+        "zstd": -1,
+        "squashfs_le": -1
+      },
+      "candidate_trailer": {
+        "start": 2641936,
+        "length": 1028,
+        "prefix_hex": "01060100",
+        "u32le_at_956": 2641920,
+        "u32le_at_960": 2641936,
+        "u32le_at_976": 2581,
+        "checks": {
+          "marker_matches": true,
+          "field956_equals_body_minus16": true,
+          "field960_equals_body": true,
+          "field956_is_4096_aligned": true,
+          "field976_equals_ceil_body_div1024": true
+        },
+        "matches_studied_pattern": true
+      },
+      "decrypted": false,
+      "authenticity_verified": false
+    }
+  },
+  {
+    "sample": "s5v-english-format-sample.pkg",
+    "model_family": "PearlEPro a170",
+    "source_url": "https://us-app.roborock.com/app/pearlepro/voice-pkg/package/en.pkg",
+    "voice_id": 3,
+    "version": 3,
+    "inspection": {
+      "bytes": 2991124,
+      "sha256": "fcf807f176574c7bdb7dd18213af4c47f2d8fdb7801d89d31997ea8581a7b3de",
+      "md5": "b773bb3543d295f94f848ce3a1fa0651",
+      "entropy_bits_per_byte": 7.999935,
+      "signature_first_offsets": {
+        "zip": -1,
+        "gzip": -1,
+        "riff": -1,
+        "ogg": -1,
+        "flac": -1,
+        "tar_ustar": -1,
+        "xz": -1,
+        "zstd": -1,
+        "squashfs_le": -1
+      },
+      "candidate_trailer": {
+        "start": 2990096,
+        "length": 1028,
+        "prefix_hex": "01060100",
+        "u32le_at_956": 2990080,
+        "u32le_at_960": 2990096,
+        "u32le_at_976": 2921,
+        "checks": {
+          "marker_matches": true,
+          "field956_equals_body_minus16": true,
+          "field960_equals_body": true,
+          "field956_is_4096_aligned": true,
+          "field976_equals_ceil_body_div1024": true
+        },
+        "matches_studied_pattern": true
+      },
+      "decrypted": false,
+      "authenticity_verified": false
+    }
+  },
+  {
+    "sample": "s5v-mandarin-format-sample.pkg",
+    "model_family": "PearlEPro a170",
+    "source_url": "https://us-app.roborock.com/app/pearlepro/voice-pkg/package/prc.pkg",
+    "voice_id": 1,
+    "version": 3,
+    "inspection": {
+      "bytes": 2872340,
+      "sha256": "18a43ae4f320834d7da39e6ceff4dd5cd2be44dfa22ba984eac6af1da386f3d8",
+      "md5": "681b5d6fd06612c6da56cb7c0d508596",
+      "entropy_bits_per_byte": 7.999936,
+      "signature_first_offsets": {
+        "zip": -1,
+        "gzip": -1,
+        "riff": -1,
+        "ogg": -1,
+        "flac": -1,
+        "tar_ustar": -1,
+        "xz": -1,
+        "zstd": -1,
+        "squashfs_le": -1
+      },
+      "candidate_trailer": {
+        "start": 2871312,
+        "length": 1028,
+        "prefix_hex": "01060100",
+        "u32le_at_956": 2871296,
+        "u32le_at_960": 2871312,
+        "u32le_at_976": 2805,
+        "checks": {
+          "marker_matches": true,
+          "field956_equals_body_minus16": true,
+          "field960_equals_body": true,
+          "field956_is_4096_aligned": true,
+          "field976_equals_ceil_body_div1024": true
+        },
+        "matches_studied_pattern": true
+      },
+      "decrypted": false,
+      "authenticity_verified": false
+    }
+  }
+]

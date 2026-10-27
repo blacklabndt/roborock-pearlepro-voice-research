@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.env*
+*.pkg
+*.apk
+*.bin
+*.hbc
+*.hasm
+*.wav
+*.ogg
+*.mp3
+*.log
+.local-diagnostics/
+inspection.json
